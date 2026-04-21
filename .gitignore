@@ -1,0 +1,18 @@
+# Clojure deps.edn cache
+.cpcache/
+
+# clj-kondo cache
+.clj-kondo/.cache/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Compiled class files
+*.class
+
+# Build output
+target/
