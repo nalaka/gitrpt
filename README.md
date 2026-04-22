@@ -14,7 +14,7 @@ brew install clojure/tools/clojure
 
 Run directly
 ```shell
-clj -M -m gitrpt.core
+clj -M -m com.github.nalaka.gitrpt.main
 ```
 
 Build uber jar

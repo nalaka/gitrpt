@@ -1,8 +1,7 @@
-(ns gitrpt.core
+(ns com.github.nalaka.gitrpt.core
   (:require [clj-pdf.core :refer [pdf]]
             [clojure.java.shell :refer [sh]]
-            [clojure.string :as str])
-  (:gen-class))
+            [clojure.string :as str]))
 
 (defn git [dir & args]
   (let [{:keys [exit out err]} (apply sh "git" (concat args [:dir dir]))]
@@ -59,7 +58,3 @@
       output-path)
     (println (str "Report written to " output-path))))
 
-(defn -main [& args]
-  (let [dir (or (first args) ".")
-        output-path (or (second args) "report.pdf")]
-    (generate-report dir output-path)))

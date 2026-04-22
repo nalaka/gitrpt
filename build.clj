@@ -13,6 +13,6 @@
 (defn uber [_]
   (clean nil)
   (b/copy-dir {:src-dirs ["src"] :target-dir class-dir})
-  (b/compile-clj {:basis @basis :ns-compile '[gitrpt.core] :class-dir class-dir})
+  (b/compile-clj {:basis @basis :ns-compile '[com.github.nalaka.gitrpt.main] :class-dir class-dir})
   (b/uber {:class-dir class-dir :uber-file uber-file :basis @basis
-           :main      'gitrpt.core}))
+           :main      'com.github.nalaka.gitrpt.main}))
