@@ -17,3 +17,16 @@
 # Build output
 target/
 *.pdf
+
+# REPL & Development Tools
+.nrepl-port
+.cider-*
+.lsp/
+.calva/
+
+# Build artifacts
+*.jar
+pom.xml
+
+# Sandbox files
+sandbox.clj
